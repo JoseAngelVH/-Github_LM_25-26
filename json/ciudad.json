@@ -1,0 +1,8 @@
+{"ciudades":
+    {"ciudad":[
+        {"nombre":"Nueva Delhi", "pais":"India"}, 
+        {"nombre":"Lisboa", "pais":"Portugal"}, 
+        {"nombre":"El Cairo", "pais":"Egipto"}
+        ]
+    }
+}

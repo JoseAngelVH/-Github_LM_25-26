@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <persona>
+        <nombre>Juan</nombre>
+        <apellido>Garcia</apellido>
+        <dni>44953781H</dni>
+        <localidad>Cadiz</localidad>
+        <telefono>681357169</telefono>
+    </persona>
+    <persona>
+        <nombre>Jose</nombre>
+        <apellido>Sanchez</apellido>
+        <dni>44958481G</dni>
+        <localidad>Sevilla</localidad>
+        <telefono>684259752</telefono>
+    </persona>

@@ -1,0 +1,6 @@
+{"alumnos":
+    {"alumno":[
+        {"nombre":"Juan", "curso":"1º Asir", "evaliacion":{"primera":"8","segunda":"5","tercera":"7"}}
+        ]
+    }
+}

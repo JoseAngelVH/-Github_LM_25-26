@@ -1,0 +1,40 @@
+*{
+    margin: auto;
+}
+#amarillo{
+    width: 200px;
+    height: 70px;
+    background-color: yellow;
+}
+
+.rojo{
+    
+    width: 200px;
+    height: 50px;
+    background-color: red;
+}
+
+#bandera1{
+    color: blue;
+    border:solid black;
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#bandera2{
+    color: green;
+    border:solid black;
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 0px;
+}
+
+article div p {
+    text-align: center;
+    padding-top: 20px;
+}

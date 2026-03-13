@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+  <nombre>juan</nombre>
+  <edad>22</edad>
+  <estudios>
+    <estudio>primario</estudio>
+    <estudio>secundario</estudio>
+  </estudios>
+</persona>

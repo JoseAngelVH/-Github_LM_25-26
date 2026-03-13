@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <equipos>
+        <equipo>
+            <nombre>F.C. Barcelona</nombre>
+            <ciudad>Barcelona</ciudad>
+            <entrenador>Hansi Flick</entrenador>
+            <jugadores>
+                <jugador descripcion="Delantero">
+                    <nombre>Lamine Yamal</nombre>
+                    <nacinalidad>Española</nacionalidad>
+                </jugador>
+                <jugador descripcion="Portero">
+                    <nombre>Wojciech Szczęsny</nombre>
+                    <nacinalidad>Polaco</nacionalidad>
+                </jugador>
+            </jugadores>
+        </equipo>
+        <equipo>
+            <nombre>Betis</nombre>
+            <ciudad>Sevilla</ciudad>
+            <entrenador>Manuel Pellegrini</entrenador>
+            <jugadores>
+                <jugador descripcion="Delantero">
+                    <nombre>Antony</nombre>
+                    <nacinalidad>Brasileño</nacionalidad>
+                </jugador>
+                <jugador descripcion="Centrocampista">
+                    <nombre>Isco</nombre>
+                    <nacinalidad>Española</nacionalidad>
+                </jugador>
+            </jugadores>
+        </equipo>
+    </equipos>

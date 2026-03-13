@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura>
+    <codigo>FCT-20251001</codigo>
+    <fechaemision>2025-10-22</fechaemision>
+    <cliente>
+        <dni>12345678A</dni>
+        <nombre>Juan Pérez</nombre>
+        <direccion>Calle Mayor, 123</direccion>
+        <codigopostal>28001</codigopostal>
+        <poblacion>Madrid</poblacion>
+    </cliente>
+    <productos>
+        <producto>
+            <cantidad>2</cantidad>
+            <denominacion>Teclado inalámbrico</denominacion>
+            <preciounitario>25.50</preciounitario>
+            <iva>21</iva>
+        </producto>
+        <producto>
+            <cantidad>1</cantidad>
+            <denominacion>Ratón óptico</denominacion>
+            <preciounitario>15.00</preciounitario>
+            <iva>21</iva>
+        </producto>
+    </productos>
+
+    <descuento>10.00</descuento>
+</factura>

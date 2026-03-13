@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+  <empleado>
+    <nombre>Jorge</nombre>
+    <apellido>Mesa</apellido>
+    <edad>28</edad>
+  </empleado>
+  <empleado>
+    <nombre>Ana</nombre>
+    <apellido>Sánchez</apellido>
+    <edad>21</edad>
+  </empleado>
+  <empleado>
+    <nombre>Pedro</nombre>
+    <apellido>Lee</apellido>
+    <edad>44</edad>
+  </empleado>
+</empleados>
