@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function calcularmedia(tab_notas) {
+            i = 0;
+            suma = 0;
+            while (i < tab_notas.length){
+                suma = suma + tab_notas[i];
+                i++;
+            }
+            media = suma / tab_notas.length;
+
+            return media
+        }
+
+        function Visualizar(media) {
+            document.write("La media es: " + media + "<br>");
+            if (media >= 5){
+                document.write("Estas aprobado");
+            } else {
+                document.write("Estas suspenso");
+            }
+        }
+        tablas_notas=[5,6,4]
+
+        Visualizar(calcularmedia(tablas_notas)); 
+    </script>
+</body>
+</html>

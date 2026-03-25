@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // se pide 3 notas de alumno obtener la media
+        a = parseInt(prompt("Primera nota:"))
+        b = parseInt(prompt("Segunda nota:"))
+        c = parseInt(prompt("Tercera nota:"))
+
+        function calcularmedia(a, b, c) {
+            return (a + b + c) / 3;
+        }
+
+        function Visualizar(media) {
+            document.write("La media es: " + media + "<br>");
+            if (media >= 5){
+                document.write("Estas aprobado");
+            } else {
+                document.write("Estas suspenso");
+            }
+        }
+
+        Visualizar(calcularmedia(a, b, c)); 
+    </script>
+</body>
+</html>

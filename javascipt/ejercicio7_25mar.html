@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Calcular cuantas suspensa hay
+        
+
+        function calcularmedia(tab_notas) {
+            i = 0;
+            contar = 0;
+            while (i < tab_notas.length){
+                if (tab_notas[i] < 5){
+                    contar++
+                }
+                i++;
+            }
+            return contar;
+        }
+
+        function Visualizar(media) {
+            document.write("Cuanto: " + media + "<br>")
+        }
+        tablas_notas=[5,6,4]
+
+        Visualizar(calcularmedia(tablas_notas)); 
+    </script>
+</body>
+</html>
