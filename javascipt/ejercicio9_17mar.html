@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        nota = parseInt(prompt("Intruduce una nota"))
+
+        function Proceso(nota){
+            if (nota < 3){
+                return("Muy deficiente")
+            } else if (nota < 5){
+                return("Insuficiente")
+            } else if (nota < 6){
+                return("Suficiente")
+            } else if (nota < 7){
+                return("Bien")
+            } else if (nota < 9){
+                return("Notable")
+            }else {
+                return("Sobresaliente")
+            }
+        }
+
+        function Visualizar(dato){
+            document.write(dato)
+        }
+
+        Visualizar(Proceso(nota))
+    </script>
+</body>
+</html>
