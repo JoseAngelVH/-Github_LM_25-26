@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declarar un arrray con las nota de un alumno. Visualizar cuantas notas aprobadas tiene. Con funciones.
+        var notas = [8, 4, 7, 3, 10];
+        var count = 0;
+
+        function Notas(notas) {
+            for (var i = 0; i < notas.length; i++) {
+                if (notas[i] >= 5) {
+                    count++;
+                }
+            }
+            alert("El alumno tiene " + count + " notas aprobadas.");
+        }
+
+        Notas(notas);
+    </script>
+</body>
+</html>
