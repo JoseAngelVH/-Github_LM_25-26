@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declarar un arrray con las nota de un alumno. Visualizar cuantas notas aprobadas tiene. Visualizar la media de las notas aprobadas. Con funciones.
+        var notas = [8, 4, 7, 3, 9];
+        var count = 0;
+        var suma = 0;
+
+        function Notas(notas) {
+            for (var i = 0; i < notas.length; i++) {
+                if (notas[i] >= 5) {
+                    count++;
+                    suma += notas[i];
+                }
+            }
+            return count;
+        }
+
+        function Visualizar(dato) {
+            alert("El alumno tiene " + dato + " notas aprobadas.");
+            alert("La media de las notas aprobadas es: " + (suma / count));
+        }
+
+        resul = Notas(notas);
+        Visualizar(resul)
+    </script>
+</body>
+</html>
