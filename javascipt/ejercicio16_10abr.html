@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Se declara un array con una serie de valores. Visualizar si en ese array se encuentra el valor -99. Con funciones.
+        var numeros = [1, 2, 3, -99, 5];
+
+        function BuscarValor(numeros) {
+            buscar = 0;
+            for (var i = 0; i < numeros.length; i++) {
+                if (numeros[i] === -99) {
+                    buscar = 1;
+                }
+            }
+            return buscar;
+        }
+
+        function Visualizar(dato) {
+            if (dato == 1) {
+                alert("El valor -99 se encuentra en el array.");
+            } else {
+                alert("El valor -99 no se encuentra en el array.");
+            }
+        }
+
+        resul = BuscarValor(numeros);
+        Visualizar(resul);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declarar un array con notas, visualizar las notas aprobadas utilizando un switch = 0. Con funciones. Con el while
+        var notas = [5,2,9,7,3,8];
+
+        function Visualizar (notas){
+            sw = 0;
+            i = 0;
+            while (sw == 0){
+                if (i == notas.length){
+                    sw = 1;
+                } else{
+                    if (notas[i] >= 5){
+                        alert(notas[i]);
+                    }
+                    i++;
+                }
+            }
+        }
+
+        Visualizar(notas);
+    </script>
+</body>
+</html>
