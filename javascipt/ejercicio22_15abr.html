@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declarar un array con valores numéricos enteros, calcular si el array está ordenado ascendente si o no. Con funciones.
+        var numeros = [1, 2, 4, 7, 53];
+
+        function Proceso(numeros) {
+            for (var i = 0; i < numeros.length - 1; i++) {
+                if (numeros[i] > numeros[i + 1]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+        function Visualizar(dato) {
+            if (dato) {
+                document.write("El array está ordenado ascendente: Sí");
+            } else {
+                document.write("El array está ordenado ascendente: No");
+            }
+        } 
+
+        resul = Proceso(numeros);
+        Visualizar(resul);
+
+    </script>
+</body>
+</html>

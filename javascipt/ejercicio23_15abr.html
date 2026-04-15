@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declarar dos arrays con valores numericoss enteros. Visualizar si los arrays son exactamente iguales o no.
+
+        var array1 = [1, 2, 3, 4, 5];
+        var array2 = [1, 2, 3, 4, 5];
+
+        function CompararArrays(array1, array2) {
+            if (array1.length !== array2.length) {
+                return false;
+            }
+            for (var i = 0; i < array1.length; i++) {
+                if (array1[i] !== array2[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function Visualizar(dato) {
+            if (dato) {
+                document.write("Los arrays son exactamente iguales.");
+            } else {
+                document.write("Los arrays no son exactamente iguales.");
+            }
+        }
+
+        resul = CompararArrays(array1, array2);
+        Visualizar(resul);
+
+    </script>
+</body>
+</html>

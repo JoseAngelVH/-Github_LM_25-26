@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Se piede notas repetidas al usuario hasta que el usuario meta -99. Visualizar todas las notas introduccidas.Con funciones.
+
+        function Proceso(){
+            let notas = [];
+            let sw = 0;
+            while (sw == 0){
+                let nota = parseInt(prompt("Introduce la nota:"));
+                if (nota == -99){
+                    sw = 1;
+                } else{
+                    notas.push(nota);
+                }
+            }
+            return notas;
+        }
+
+        function Visulizar(notas){
+            alert("Las notas introducidas son: " + notas);
+        }
+
+       resul = Proceso();
+       Visulizar(resul);
+
+    </script>
+</body>
+</html>

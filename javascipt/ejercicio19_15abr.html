@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Pedir notas repetidamente a un alumno hasta que el valor dictado sea -99. En el moemnto que sea -99 se detiene la petición de notas 
+        // y se visualiza lamedia de las notas. Con funciones.
+
+        
+
+        function Proceso(){
+            let sum = 0;
+            let sw = 0;
+            let contador = 0;
+            while (sw == 0){
+                let nota = parseInt(prompt("Introduce la nota:"));
+                if (nota == -99){
+                    sw = 1;
+                } else{
+                    sum += nota;
+                    contador++;
+                }
+            }
+            total = sum / contador;
+            return total;
+        }
+
+        function Visulizar(total){
+            alert("La media de las notas es: " + total);
+        }
+
+       resul = Proceso();
+       Visulizar(resul);
+
+    </script>
+</body>
+</html>
