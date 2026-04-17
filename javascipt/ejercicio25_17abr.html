@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Pedir datos numericos al usuario siempre y cuando el número tecleado sea mayor que el número tecleaado anterior.
+        // Visualizar cuantos númercos se han introducido hasta que se teclee un número menor o igual al anterior y cuales.
+
+        function Proceso(){
+            let numeros = -Infinity;
+            let sw = 0;
+            let contador = 0;
+            let numerosinsertados = [];
+            while (sw == 0){
+                let numero = parseInt(prompt("Introduce un numero:"));
+                if (numero < numeros){
+                    sw = 1;
+                } else {
+                    numeros = numero;
+                    contador++;
+                    numerosinsertados.push(numero);
+                }
+            }
+            return {contador, numerosinsertados};
+        }
+
+        function Visulizar(numeros){
+            alert("Los numeros introducidos son: " + numeros.numerosinsertados + " y se han introducido estos numeros: " + numeros.contador);
+        }
+
+       Visulizar(Proceso());
+
+    </script>
+</body>
+</html>

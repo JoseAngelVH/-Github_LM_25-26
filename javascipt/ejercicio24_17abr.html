@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Pedir datos numericos al usuario hasta que se utilice -99. Visualizar el mayor de los valores introducidos. Con funciones.
+
+        function Proceso(){
+            let numeros = 0;
+            let sw = 0;
+            while (sw == 0){
+                let numero = parseInt(prompt("Introduce un numero:"));
+                if (numero == -99){
+                    sw = 1;
+                } else if (numero > numeros) {
+                    numeros = numero;
+                }
+            }
+            return numeros;
+        }
+
+        function Visulizar(numeros){
+            alert("El numero mayor introducido es: " + numeros);
+        }
+
+       resul = Proceso();
+       Visulizar(resul);
+
+    </script>
+</body>
+</html>
