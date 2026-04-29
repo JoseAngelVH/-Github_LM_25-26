@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Sumar los dueldos de cada empleado y mostrar el resultado por pantalla.
+
+        mat_sueldo = [
+            ["Pepe", 800, 2300, 1900],
+            ["Ana", 1500, 4000],
+            ["Manuel", 900, 3200, 5000]
+        ];
+
+        function Visualizar(mat_sueldo){
+            for (i=0; i < mat_sueldo.length; i++){
+                let suma = 0;
+                for (k=1; k < mat_sueldo[i].length; k++){
+                    suma += mat_sueldo[i][k];
+                }
+                document.write("El sueldo total de " + mat_sueldo[i][0] + " es: " + suma + "<br>");
+            }
+        }
+
+        Visualizar (mat_sueldo);
+
+    </script>
+</body>
+</html>
+

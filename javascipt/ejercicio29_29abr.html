@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // La media de los dueldos de cada empleado y mostrar el resultado por pantalla.
+
+        mat_sueldo = [
+            ["Pepe", 800, 2300, 1900],
+            ["Ana", 1500, 4000],
+            ["Manuel", 900, 3200, 5000]
+        ];
+
+        function Visualizar(mat_sueldo){
+            for (i=0; i < mat_sueldo.length; i++){
+                let suma = 0;
+                let media = 0;
+                for (k=1; k < mat_sueldo[i].length; k++){
+                    suma += mat_sueldo[i][k];
+                    media = suma / (mat_sueldo[i].length - 1);
+                }
+                document.write("La media de los sueldos de " + mat_sueldo[i][0] + " es: " + media + "<br><br>");
+            }
+        }
+
+        Visualizar (mat_sueldo);
+
+    </script>
+</body>
+</html>
+

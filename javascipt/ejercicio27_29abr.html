@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        mat_sueldo = [
+            ["Pepe", 800, 2300, 1900],
+            ["Ana", 1500, 4000],
+            ["Manuel", 900, 3200, 5000]
+        ];
+
+        function Visualizar(mat_sueldo){
+            for (i=0; i < mat_sueldo.length; i++){
+                for (k=0; k < mat_sueldo[i].length; k++){
+                    document.write(mat_sueldo[i][k] + "<br>");
+                }
+            }
+        }
+
+        Visualizar (mat_sueldo);
+
+    </script>
+</body>
+</html>
