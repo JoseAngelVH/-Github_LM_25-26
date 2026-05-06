@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="numero1" value=" ">
+        <input type="text" id="numero2" value=" ">
+        <input type="button" onClick="sumar()" value="+">
+        <input type="button" onClick="restar()" value="-">
+        <input type="button" onClick="multiplicar()" value="*">
+        <input type="button" onClick="dividir()" value="/">
+        <p>Resultado<p id="resultado"></p></p>
+    </form>
+    <script>
+        // Pedir dos números y 4 botones, que sean + - * y / y al pulsar cada boton se realice la operacion correspondiente con los numeros introducidos.
+
+        var numero1;
+        var numero2;
+
+        function sumar() {
+            numero1 = parseFloat(document.getElementById("numero1").value);
+            numero2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = numero1 + numero2;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+        function restar() {
+            numero1 = parseFloat(document.getElementById("numero1").value);
+            numero2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = numero1 - numero2;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+        function multiplicar() {
+            numero1 = parseFloat(document.getElementById("numero1").value);
+            numero2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = numero1 * numero2;
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+        function dividir() {
+            numero1 = parseFloat(document.getElementById("numero1").value);
+            numero2 = parseFloat(document.getElementById("numero2").value);
+            if (numero2 !== 0) {
+                var resultado = numero1 / numero2;
+                document.getElementById("resultado").innerHTML = resultado;
+            } else {
+                document.getElementById("resultado").innerHTML = "No se puede dividir por cero.";
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

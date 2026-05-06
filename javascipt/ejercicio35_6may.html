@@ -29,13 +29,13 @@
         }
 
         function Visualizar(dato){
-            var alumnoMayorMedia = dato[0];
+            var mayor = dato[0];
             for (var i = 1; i < dato.length; i++) {
-                if (dato[i][1] > alumnoMayorMedia[1]) {
-                    alumnoMayorMedia = dato[i];
+                if (dato[i][1] > mayor[1]) {
+                    mayor = dato[i];
                 }
             }
-            document.write("El alumno con mayor media es " + alumnoMayorMedia[0] + " con una media de: " + alumnoMayorMedia[1] + "<br>");
+            document.write("El alumno con mayor media es " + mayor[0] + " con una media de: " + mayor[1] + "<br>");
         }
 
         Visualizar(Proceso(alumnos));
