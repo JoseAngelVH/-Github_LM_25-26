@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declarar la informacion de varios alumnos y sus notas, calcular la media de cada alumno y visualizar el alumno que tenga mayor media.
+
+        var alumnos = [
+            ["jose", 8, 3, 7],
+            ["ana", 9, 6, 8],
+            ["luis", 7, 5, 6]
+        ];
+        
+        function Proceso(alumnos){
+            var total = [];
+            for (var i = 0; i < alumnos.length; i++) {
+                var suma = 0;
+                for (var j = 1; j < alumnos[i].length; j++) {
+                    suma += alumnos[i][j];
+                }
+                var media = suma / (alumnos[i].length - 1);
+                total.push([alumnos[i][0], media]);
+            }
+            return total;
+        }
+
+        function Visualizar(dato){
+            var alumnoMayorMedia = dato[0];
+            for (var i = 1; i < dato.length; i++) {
+                if (dato[i][1] > alumnoMayorMedia[1]) {
+                    alumnoMayorMedia = dato[i];
+                }
+            }
+            document.write("El alumno con mayor media es " + alumnoMayorMedia[0] + " con una media de: " + alumnoMayorMedia[1] + "<br>");
+        }
+
+        Visualizar(Proceso(alumnos));
+
+    </script>
+</body>
+</html>

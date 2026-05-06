@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Un array como primer elemento el nombre y segundo la nota y hacer la media de las notas.
+
+        var alumno = ["jose", 8, 3, 7];
+        var suma = 0;
+
+        function Proceso(alumno){
+            for (var i = 1; i < alumno.length; i++) {
+                suma += alumno[i];
+            }
+            var media = suma / (alumno.length - 1);
+            return media;
+        }
+
+        function Visualizar(dato){
+            document.write("La media de " + alumno[0] + " es: " + dato);
+        }
+
+        Visualizar(Proceso(alumno));
+
+    </script>
+</body>
+</html>

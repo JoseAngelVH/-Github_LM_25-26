@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declarar la informacion de varios alumnos y sus notas, calcular la media de cada alumno y visualizar la media.
+
+        var alumnos = [
+            ["jose", 8, 3, 7],
+            ["ana", 9, 6, 8],
+            ["luis", 7, 5, 6]
+        ];
+        
+        function Proceso(alumnos){
+            var total = [];
+            for (var i = 0; i < alumnos.length; i++) {
+                var suma = 0;
+                for (var j = 1; j < alumnos[i].length; j++) {
+                    suma += alumnos[i][j];
+                }
+                var media = suma / (alumnos[i].length - 1);
+                total.push([alumnos[i][0], media]);
+            }
+            return total;
+        }
+
+        function Visualizar(dato){
+            for (var i = 0; i < dato.length; i++) {
+                document.write("La media de " + dato[i][0] + " es: " + dato[i][1] + "<br>");
+            }
+        }
+
+        Visualizar(Proceso(alumnos));
+
+    </script>
+</body>
+</html>
