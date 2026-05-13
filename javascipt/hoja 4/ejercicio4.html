@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+    Login:<br><input type="text" name="login"  id="login"><br>
+    Clave:<br><input type="text" name="clave"  id="clave">
+
+   <input type="button" value="Validar" onclick="Capturar()">
+  <h3>Resultado: <strong id="resultado"></strong></h3>
+ 
+
+<script>
+    /*4.-) En una lista o array se guardan los login o nombres de usuarios (los que se quieran). En otra lista se guardan las correspondientes claves. Se pide:
+  a) Dado un login y clave de un usuario por teclado, visualizar SI o NO está registrado, es decir, si su login está en la lista primera y su clave está en la lista segunda.
+  Por ejemplo: lista_login = ["manu", "loli", "root", "usuario1"]
+                 lista_claves = ["1234", "loli200", "4256", "usuario1"]
+   Si los datos del usuario son: login —> "root" y clave —> "4256" , se visualiza el mensaje: "el usuario SI está correctamente registrado". */
+   var lista_login = ["manu", "loli", "root", "usuario1"];
+   var lista_claves = ["1234", "loli200", "4256", "usuario1"];
+   
+    // -------- FUNCIONES -------------
+    function Capturar (){
+        var respuesta="no";
+        var login=document.getElementById("login").value;
+        var clave=document.getElementById("clave").value;
+
+        for (i=0; i < lista_login.length; i++){
+            if (lista_login[i] == login && lista_claves[i]==clave){
+                respuesta = "si";
+            }
+        }
+
+        if (respuesta == "si"){
+             document.getElementById("resultado").innerHTML="el usuario SI está correctamente logueado";
+          }else
+          {
+          document.getElementById("resultado").innerHTML="el usuario NO se puede loguear";
+          }
+    }
+
+    
+    
+
+ 
+        
+
+</script>
+
+
+
+
+</body>
+
+</html>

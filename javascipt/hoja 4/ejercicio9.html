@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h3><strong id="resultado1"></strong></h3>
+  <h3><strong id="resultado2"></strong></h3>
+ 
+
+<script>
+  /* 9.-) Se declara una lista con valores numéricos.
+a) Visualizar la media de los valores situados en posiciones pares. 
+b) Visualizar la media de los valores situados en posiciones impares.  */
+   var lista = [3, 6, 2, 2, 2, 3,-4,-4,-8];
+   
+   
+    // -------- FUNCIONES -------------
+ 
+
+      
+    function Media1 (vector){
+      var acum =0, conta=0;
+
+       for (i=0; i < vector.length; i++){          
+          if (i % 2 == 0){
+            acum += vector[i];
+            conta += 1;
+          }         
+        }
+        var media = acum / conta;
+        return media;
+    }
+    
+       function Media2 (vector){
+      var acum =0, conta=0;
+
+       for (i=0; i < vector.length; i++){          
+          if (i % 2 != 0){
+            acum += vector[i];
+            conta += 1
+          }         
+        }
+        var media = acum / conta;
+        return media;
+    }
+    function Visualizar1(dato){
+      document.getElementById("resultado1").innerHTML="media de valores situados en posiciones pares: "+dato;
+          
+    }
+     function Visualizar2(dato){
+      document.getElementById("resultado2").innerHTML="valores situados en posiciones impares: "+dato;
+          
+    }
+    // --------- PROGRAMA PRINCIPAL ----------------- 
+    media1 = Media1 (lista);
+    Visualizar1 (media1);
+    media2 = Media2 (lista);
+    Visualizar2 (media2);
+
+
+    
+
+ 
+        
+
+</script>
+
+
+
+
+</body>
+
+</html>
+ 

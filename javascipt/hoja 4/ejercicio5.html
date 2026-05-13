@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h3><strong id="resultado"></strong></h3>
+ 
+
+<script>
+    /*5.-)  Se declara una lista con valores numéricos. Visualizar las posiciones donde haya algún número negativo junto al valor correspondiente.
+Por ejemplo: lista = [10, -22, 30, 45, -32, 200, -11, 4, -70].
+  En este caso se visualiza:
+posición 1, valor -22
+posición 4, valor -32
+posición 6, valor -11
+posición 8, valor -70 */
+   var lista = [10, -22, 30, 45, -32, 200, -11, 4, -70];
+   
+    // -------- FUNCIONES -------------
+  
+    function Visualizar (vector){
+      for (i=0; i< vector.length; i++){
+            if (vector[i] < 0){
+              document.write("en la posicion "+i+" "+vector[i]+"<br>");
+            }
+      }
+    }
+        
+      
+        
+        
+    
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    
+    Visualizar (lista);
+
+
+    
+
+ 
+        
+
+</script>
+
+
+
+
+</body>
+
+</html>

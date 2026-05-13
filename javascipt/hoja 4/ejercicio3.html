@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h3><strong id="resultado"></strong></h3>
+ 
+
+<script>
+    /*3.-) Se declara una lista con valores numéricos. Por cada valor, visualizar su cuadrado. Para obtener el cuadrado, declarar una función (con su return correspondiente). 
+ Si lista es [2,3,4,8,5], los valores visualizados serán: 4, 9,16,64,25. */
+   var lista = [2,3,4,8,5];
+   
+    // -------- FUNCIONES -------------
+    function Cuadrado (num){
+        
+        return num * num;
+    }
+
+    function Visualizar (vector){
+      for (i=0; i< vector.length; i++){
+            document.write(Cuadrado(vector[i])+" ")
+      }
+    }
+        
+      
+        
+        
+    
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    
+    Visualizar (lista);
+
+
+    
+
+ 
+        
+
+</script>
+
+
+
+
+</body>
+
+</html>

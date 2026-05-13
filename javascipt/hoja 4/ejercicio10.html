@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+  /* 10.-) Se declara una lista con valores numéricos.
+a) Visualizar los valores de la lista superiores a la media global.  */
+   var lista = [3, 6, 2, 2, 2, 3,-4,-4,8];
+   
+   
+    // -------- FUNCIONES -------------
+ 
+
+      
+    function Media (vector){
+      var acum =0;
+
+       for (i=0; i < vector.length; i++){          
+          
+            acum += vector[i];
+                             
+        }
+        var media = acum / vector.length;
+        return media;
+    }
+
+    function Visualizar (vector, med){
+      document.write("valores mayores que la media: "+med+"<br>");
+      for (i=0; i < vector.length; i++){          
+          
+            if (vector[i] > med){
+              document.write(vector[i]+"<br>");
+            }
+                             
+        }
+    }
+    
+       
+
+    // --------- PROGRAMA PRINCIPAL ----------------- 
+    media = Media (lista);
+    Visualizar (lista, media);
+   
+
+
+    
+
+ 
+        
+
+</script>
+
+
+
+
+</body>
+
+</html>
+ 
