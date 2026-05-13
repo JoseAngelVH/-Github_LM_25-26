@@ -15,9 +15,10 @@
    <h3>Múltiplos de 10 hay en la lista: <strong id="resultado"></strong></h3>
 
 <script>
-    /*1.-) Se declaran valores enteros en una lista, por ejemplo [10, 22, 30, 45, 32, 200, 11, 4, 70].  Visualizar, cuantos múltiplos de 10 hay en la lista. En el ejemplo serían 4 (10, 30, 200 y 70). */
+    /*1.-) Se declaran valores enteros en una lista, por ejemplo [10, 22, 30, 45, 32, 200, 11, 4, 70].  
+    Visualizar, cuantos múltiplos de 10 hay en la lista. En el ejemplo serían 4 (10, 30, 200 y 70). */
+
    lista = [10, 22, 30, 45, 32, 200, 11, 4, 70];
-   
 
     // -------- FUNCIONES -------------
     function Proceso (vector){
@@ -31,27 +32,13 @@
     }
 
     function Visualizar (dato){
-        
          document.getElementById("resultado").innerHTML=dato;
-        
-        
     }
 
     // --------- PROGRAMA PRINCIPAL -----------------
     var resul = Proceso (lista);
     Visualizar (resul);
-
-
     
-
- 
-        
-
 </script>
-
-
-
-
 </body>
-
 </html>
