@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
+        <br><br>
+        <label>Nota:</label>
+        <input type="number" id="nota">
+        <br><br>
+        <button type="button" onclick="evaluarAlumno()">Agregar alumno</button>
+
+    </form>
+    <p id="resultado"></p>
+    <script>
+        //Dado un nombre de alumno y nota, almacenarlo en un objeto y visualizarlo.
+
+        function evaluarAlumno(){
+            let alumno = {
+                nombre:document.getElementById("nombre").value,
+                nota:parseFloat(document.getElementById("nota").value)
+            };
+            let estado;
+            if (alumno.nota >= 5){
+                estado = "Aprobado";
+            } else {
+                estado = "Suspenso";
+            }
+
+            document.getElementById("resultado").textContent = 
+            "Alumno: " + alumno.nombre + 
+            " | Nota: " + alumno.nota + 
+            " | Estado: " + estado;
+        }
+
+
+
+    </script>
+</body>
+</html>
+
+Guardar el nombre y la nota de vario alumnos

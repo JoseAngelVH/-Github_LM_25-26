@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="n1" placeholder="Número 1"><br><br>
+        <input type="number" id="n2" placeholder="Número 2"><br><br>
+        <input type="number" id="n3" placeholder="Número 3"><br><br>
+        <input type="number" id="n4" placeholder="Número 4"><br><br>
+        <input type="number" id="n5" placeholder="Número 5"><br><br>
+        <input type="number" id="n6" placeholder="Número 6"><br><br>
+        <input type="number" id="n7" placeholder="Número 7"><br><br>
+        <input type="number" id="n8" placeholder="Número 8"><br><br>
+
+        <button type="button" onclick="sumar()">Sumar</button>
+    </form>
+
+    <p>Resultado: <span id="resultado"></span></p>
+
+    <script>
+        function sumar(){
+            let suma = 0;
+            for (let i = 1; i <= 8; i++){
+                let numero = parseFloat(document.getElementById("n" + i).value);
+                if (!isNaN(numero)) {
+                    suma += numero;
+                }
+            }
+            document.getElementById("resultado").textContent = suma;
+        }
+    </script>
+
+</body>
+</html>
